@@ -1,0 +1,411 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    overflow-y: scroll !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto 0;
+}
+
+.el-menu {
+    margin: 0 auto 22px;
+}
+
+.el-breadcrumb {
+    margin-bottom: 22px;
+}
+
+.el-menu--horizontal .el-menu-item.is-active {
+    border-bottom: 5px solid #20a0ff;
+}
+
+.el-pagination {
+    text-align: center;
+    margin: 22px 0;
+}
+
+.center,
+.center > input {
+    text-align: center;
+}
+
+input[readonly] {
+    background-color: #fafafa;
+    cursor: no-drop;
+}
+
+.el-select input[readonly] {
+    background-color: #fff;
+}
+
+input[readonly]:hover,
+input[readonly]:focus {
+    border-color: #bfcbd9;
+}
+
+.el-input-group__append button.el-button:hover {
+    color: #606b79;
+    background-color: #b9c4d2;
+    border-radius: 0 2px 2px 0;
+}
+
+.el-input-group__append button.el-button:active {
+    background-color: #bfcbd9;
+    color: #97a8be;
+}
+
+.el-steps {
+    margin-bottom: 50px;
+}
+
+.el-steps .el-step:last-child {
+    width: auto !important;
+}
+
+.mini {
+    width: 300px;
+}
+
+.large {
+    width: 600px;
+}
+
+.small {
+    width: 450px;
+}
+
+.action-btn {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+* {
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+.list {
+    box-sizing: border-box;
+}
+
+.list::-webkit-scrollbar {
+    width: 1px;
+}
+
+.box.team .team-detail .left::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb,
+.list::-webkit-scrollbar-thumb {
+    background-color: #20a0ff;
+    border-radius: 0;
+}
+
+.list::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.box-wrap {
+    border: 1px solid #bfcbd9;
+    border-radius: 4px;
+}
+
+.box-wrap .data-box .title {
+    border-bottom: 1px solid #bfcbd9;
+    padding: 0 10px;
+}
+
+.box-wrap .data-box.date {
+    border-right: 1px solid #bfcbd9;
+}
+
+.box-wrap .data-box .list {
+    height: 380px;
+    overflow-y: auto;
+}
+
+.box-wrap .data-box.date .list .item {
+    padding: 0 15px;
+    border-bottom: 1px dashed #bfcbd9;
+}
+
+.box-wrap .data-box.date .list .item:hover {
+    background-color: #e4e8f1;
+    border-bottom: 1px solid #e4e8f1;
+}
+
+.box-wrap .data-box.date .list .item .stat {
+    float: right;
+}
+
+.box-wrap .data-box.date .list .item .stat > span {
+    margin: 0 2px;
+}
+
+.box-wrap .data-box.match .list {
+    padding: 10px;
+}
+
+.box-wrap .data-box.match .list .date {
+    padding: 0 10px;
+    font-weight: bold;
+    clear: both;
+}
+
+.select-match-list .item,
+.box-wrap .data-box.match .list .item {
+    border: 1px dashed #bfcbd9;
+    float: left;
+    width: calc((100% - 130px) / 3);
+    padding: 5px 10px;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.box-wrap .data-box.match .list .item.selected,
+.box-wrap .data-box.match .list .item:hover {
+    border: 1px dashed #4db3ff;
+    color: #4db3ff;
+    box-shadow: 0 1px 3px 1px rgba(77, 179, 255, 0.27);
+}
+
+.box-wrap .data-box.match .list .item.selected {
+    background-color: #4db3ff;
+    color: #fff;
+}
+
+.select-match-list .item {
+    float: inherit;
+    width: calc(100% - 20px);
+    margin: 0 0 10px 0;
+    background-color: transparent;
+    cursor: default;
+    color: #8391a5;
+    border: 1px solid #d1dbe5;
+}
+
+.box-wrap .data-box.match .list:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.select-match-list .item .info > *,
+.box-wrap .data-box.match .list .item .info > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.select-match-list .item .team-name,
+.box-wrap .data-box.match .list .item .team-name {
+    min-width: 100px;
+}
+
+.select-match-list .item .team-icon,
+.box-wrap .data-box.match .list .item .team-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.select-match-list .item .vs,
+.box-wrap .data-box.match .list .item .vs {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.el-select.mini-select {
+    width: 110px;
+}
+
+.tip {
+    color: #ccc;
+    margin-left: 10px;
+    display: inline-block;
+    transition-duration: .3s;
+}
+
+.tip .light {
+    font-weight: bold;
+    color: #999;
+}
+
+.tip:hover {
+    color: #666;
+}
+
+.roomInfo .el-col:first-child {
+    padding-left: 0 !important;
+}
+
+.roomInfo img {
+    width: 100%;
+}
+
+.roomInfo .el-card__header {
+    padding: 0 15px;
+}
+
+.roomInfo .el-card__body {
+    padding: 5px 15px;
+}
+
+.el-table .cell {
+    word-break: normal;
+}
+
+.el-dialog__body .message {
+    font-size: 18px;
+    text-align: center;
+}
+
+.el-button + .el-switch,
+.el-badge.button + .el-button {
+    margin-left: 10px;
+}
+
+.el-table__expanded-cell {
+    padding: 20px 30px;
+}
+
+.table-expand {
+    font-size: 0;
+}
+
+.table-expand label {
+    width: 90px;
+    color: #99a9bf;
+}
+
+.table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 33.3333%;
+}
+
+.el-table td.is-center .cell {
+    padding: 0;
+}
+
+.el-table th > .cell {
+    padding-right: 0;
+}
+
+.el-table th.is-center > .cell {
+    padding: 0;
+}
+
+.el-table__body-wrapper,
+.el-table .cell {
+    overflow: visible;
+}
+
+.el-select-dropdown__item img {
+    height: 30px;
+    width: auto;
+    margin: 3px 10px 3px 0;
+    display: block;
+    float: left;
+}
+
+.preview-image {
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+    display: block;
+    box-shadow: 0 0 1px 1px rgba(204, 204, 204, 0.27);
+}
+
+.el-table__row.fail {
+    color: #FF4949;
+}
+
+.cell-row-line {
+    height: 20px;
+    line-height: 20px;
+}
+
+.cell-row-line:first-child {
+    margin-top: 5px;
+}
+
+.cell-row-line:last-child {
+    margin-bottom: 5px;
+}
+
+.device-type-3 {
+    background-color: #e1e1e2;
+    color: #333;
+}
+
+.device-type-4 {
+    background-color: #e8492c;
+}
+
+.pay-type-1 {
+    background-color: #ffd800;
+}
+
+.device-type-2 {
+    background-color: #97c03d;
+}
+
+.pay-type-2 {
+    background-color: #47b233;
+}
+
+.pay-type-3 {
+    background-color: #e0832f;
+}
+
+.pay-type-4 {
+    background-color: #1c4182;
+}
+
+.device-type-1,
+.pay-type-5 {
+    background-color: #000;
+}
+
+.el-button--small, .el-button--small.is-round {
+    padding: 8px 8px;
+}
+
+.el-table .room-list-rule span {
+    display: inline-block;
+    text-align: left;
+    min-width: 50px;
+}
+
+.el-table .room-list-rule span + span {
+    margin-left: 10px;
+}
+
+.el-table .room-list-rule span.count {
+    min-width: 70px;
+}
+
+.el-table .room-list-rule span.amount {
+    min-width: 80px;
+}
